@@ -304,44 +304,6 @@ function distinct(arr) {
  *                                                      ]
  * createNDimensionalArray(1, 1) => [0]
  */
-/*  console.log('n:', n, 'size:', size);
- 
-   function addArr(count, mas = []) {
-     console.log('addArr: mas', mas);
-     if (count < 1) {
-       return mas;
-     }
-     // if (count === 1) {
-     //   return mas;
-     // }
- 
-     return Array.from({ length: count - 1 }, () => addArr(count - 1, mas));
-   }
- 
-   const arrZero = Array.from({ length: size }, () => 0);
-   console.log('arrZero:', arrZero);
- 
-   const deepArr = Array.from({ length: size }, () => arrZero);
- 
-   if (n === 1) {
-     console.log('arrZero:', arrZero);
-     console.log('arrZero.join():', arrZero.join());
-     return arrZero;
-   }
-   if (n === 2) {
-     console.log('deepArr:', deepArr);
-     console.log('deepArr.join():', deepArr.join());
-     return deepArr;
-   }
- 
-   const abs = addArr(n, deepArr);
- 
-   // res = addArr(n - 1, deepArr);
- 
-   console.log('abs:', abs);
-   console.log('abs.join():', abs.join());
- 
-   return abs; */
 function createNDimensionalArray(/* n, size */) {
   throw new Error('Not implemented');
 }
