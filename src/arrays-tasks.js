@@ -304,8 +304,35 @@ function distinct(arr) {
  *                                                      ]
  * createNDimensionalArray(1, 1) => [0]
  */
-function createNDimensionalArray(/* n, size */) {
-  throw new Error('Not implemented');
+function createNDimensionalArray(n, size) {
+  const mas = Array.from({ length: n }).fill(0);
+  const nth = mas.reduce((acc, curr, i) => {
+    if (i === n) {
+      return acc;
+    }
+
+    let el;
+
+    if (i === 0) {
+      el = 0;
+    } else {
+      console.log('acc', acc);
+      el = acc;
+    }
+
+    const sizeArr = Array(size)
+      .fill(0)
+      .reduce((accum) => {
+        console.log('accum', accum);
+        accum.push(el);
+        console.log('accum', accum);
+        return accum;
+      }, []);
+
+    return sizeArr;
+  }, []);
+
+  return nth;
 }
 
 /**
