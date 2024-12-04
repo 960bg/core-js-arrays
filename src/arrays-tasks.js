@@ -316,16 +316,13 @@ function createNDimensionalArray(n, size) {
     if (i === 0) {
       el = 0;
     } else {
-      console.log('acc', acc);
       el = acc;
     }
 
     const sizeArr = Array(size)
       .fill(0)
       .reduce((accum) => {
-        console.log('accum', accum);
         accum.push(el);
-        console.log('accum', accum);
         return accum;
       }, []);
 
